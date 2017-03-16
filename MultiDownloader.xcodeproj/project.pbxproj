@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840151F313F258B300AF775F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F213F258B300AF775F /* UIKit.framework */; };
+		840151F513F258B300AF775F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F413F258B300AF775F /* Foundation.framework */; };
+		840151F713F258B300AF775F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F613F258B300AF775F /* CoreGraphics.framework */; };
+		840151FD13F258B300AF775F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 840151FB13F258B300AF775F /* InfoPlist.strings */; };
+		8401520013F258B300AF775F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840151FF13F258B300AF775F /* main.m */; };
+		8401520313F258B300AF775F /* MultiDownloaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401520213F258B300AF775F /* MultiDownloaderAppDelegate.m */; };
+		8401520613F258B300AF775F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8401520413F258B300AF775F /* MainWindow.xib */; };
+		8401520913F258B300AF775F /* MultiDownloaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401520813F258B300AF775F /* MultiDownloaderViewController.m */; };
+		8401520C13F258B300AF775F /* MultiDownloaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8401520A13F258B300AF775F /* MultiDownloaderViewController.xib */; };
+		8401521313F258B400AF775F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F213F258B300AF775F /* UIKit.framework */; };
+		8401521413F258B400AF775F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F413F258B300AF775F /* Foundation.framework */; };
+		8401521513F258B400AF775F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840151F613F258B300AF775F /* CoreGraphics.framework */; };
+		8401521D13F258B400AF775F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8401521B13F258B400AF775F /* InfoPlist.strings */; };
+		8401522013F258B400AF775F /* MultiDownloaderTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 8401521F13F258B400AF775F /* MultiDownloaderTests.h */; };
+		8401522213F258B400AF775F /* MultiDownloaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401522113F258B400AF775F /* MultiDownloaderTests.m */; };
+		8401524413F2592200AF775F /* MultiTaskDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401523F13F2592200AF775F /* MultiTaskDownloader.m */; };
+		8401524513F2592200AF775F /* MultiThreadDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401524113F2592200AF775F /* MultiThreadDownloader.m */; };
+		8401524613F2592200AF775F /* OperationThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8401524313F2592200AF775F /* OperationThread.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8401521613F258B400AF775F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840151E513F258B300AF775F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840151ED13F258B300AF775F;
+			remoteInfo = MultiDownloader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840151EE13F258B300AF775F /* MultiDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840151F213F258B300AF775F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		840151F413F258B300AF775F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		840151F613F258B300AF775F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		840151FA13F258B300AF775F /* MultiDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiDownloader-Info.plist"; sourceTree = "<group>"; };
+		840151FC13F258B300AF775F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		840151FE13F258B300AF775F /* MultiDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		840151FF13F258B300AF775F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8401520113F258B300AF775F /* MultiDownloaderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiDownloaderAppDelegate.h; sourceTree = "<group>"; };
+		8401520213F258B300AF775F /* MultiDownloaderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDownloaderAppDelegate.m; sourceTree = "<group>"; };
+		8401520513F258B300AF775F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		8401520713F258B300AF775F /* MultiDownloaderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiDownloaderViewController.h; sourceTree = "<group>"; };
+		8401520813F258B300AF775F /* MultiDownloaderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDownloaderViewController.m; sourceTree = "<group>"; };
+		8401520B13F258B300AF775F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MultiDownloaderViewController.xib; sourceTree = "<group>"; };
+		8401521213F258B400AF775F /* MultiDownloaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiDownloaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8401521A13F258B400AF775F /* MultiDownloaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiDownloaderTests-Info.plist"; sourceTree = "<group>"; };
+		8401521C13F258B400AF775F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8401521E13F258B400AF775F /* MultiDownloaderTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiDownloaderTests-Prefix.pch"; sourceTree = "<group>"; };
+		8401521F13F258B400AF775F /* MultiDownloaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiDownloaderTests.h; sourceTree = "<group>"; };
+		8401522113F258B400AF775F /* MultiDownloaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDownloaderTests.m; sourceTree = "<group>"; };
+		8401523E13F2592200AF775F /* MultiTaskDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiTaskDownloader.h; path = MultiDownloader/MultiTaskDownloader.h; sourceTree = "<group>"; };
+		8401523F13F2592200AF775F /* MultiTaskDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiTaskDownloader.m; path = MultiDownloader/MultiTaskDownloader.m; sourceTree = "<group>"; };
+		8401524013F2592200AF775F /* MultiThreadDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiThreadDownloader.h; path = MultiDownloader/MultiThreadDownloader.h; sourceTree = "<group>"; };
+		8401524113F2592200AF775F /* MultiThreadDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiThreadDownloader.m; path = MultiDownloader/MultiThreadDownloader.m; sourceTree = "<group>"; };
+		8401524213F2592200AF775F /* OperationThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OperationThread.h; path = MultiDownloader/OperationThread.h; sourceTree = "<group>"; };
+		8401524313F2592200AF775F /* OperationThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OperationThread.m; path = MultiDownloader/OperationThread.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840151EB13F258B300AF775F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840151F313F258B300AF775F /* UIKit.framework in Frameworks */,
+				840151F513F258B300AF775F /* Foundation.framework in Frameworks */,
+				840151F713F258B300AF775F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8401520E13F258B400AF775F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8401521313F258B400AF775F /* UIKit.framework in Frameworks */,
+				8401521413F258B400AF775F /* Foundation.framework in Frameworks */,
+				8401521513F258B400AF775F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840151E313F258B300AF775F = {
+			isa = PBXGroup;
+			children = (
+				8401522B13F258C000AF775F /* Classes */,
+				840151F813F258B300AF775F /* MultiDownloader */,
+				8401521813F258B400AF775F /* MultiDownloaderTests */,
+				840151F113F258B300AF775F /* Frameworks */,
+				840151EF13F258B300AF775F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840151EF13F258B300AF775F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840151EE13F258B300AF775F /* MultiDownloader.app */,
+				8401521213F258B400AF775F /* MultiDownloaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840151F113F258B300AF775F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840151F213F258B300AF775F /* UIKit.framework */,
+				840151F413F258B300AF775F /* Foundation.framework */,
+				840151F613F258B300AF775F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840151F813F258B300AF775F /* MultiDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				8401520113F258B300AF775F /* MultiDownloaderAppDelegate.h */,
+				8401520213F258B300AF775F /* MultiDownloaderAppDelegate.m */,
+				8401520413F258B300AF775F /* MainWindow.xib */,
+				8401520713F258B300AF775F /* MultiDownloaderViewController.h */,
+				8401520813F258B300AF775F /* MultiDownloaderViewController.m */,
+				8401520A13F258B300AF775F /* MultiDownloaderViewController.xib */,
+				840151F913F258B300AF775F /* Supporting Files */,
+			);
+			path = MultiDownloader;
+			sourceTree = "<group>";
+		};
+		840151F913F258B300AF775F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840151FA13F258B300AF775F /* MultiDownloader-Info.plist */,
+				840151FB13F258B300AF775F /* InfoPlist.strings */,
+				840151FE13F258B300AF775F /* MultiDownloader-Prefix.pch */,
+				840151FF13F258B300AF775F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8401521813F258B400AF775F /* MultiDownloaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				8401521F13F258B400AF775F /* MultiDownloaderTests.h */,
+				8401522113F258B400AF775F /* MultiDownloaderTests.m */,
+				8401521913F258B400AF775F /* Supporting Files */,
+			);
+			path = MultiDownloaderTests;
+			sourceTree = "<group>";
+		};
+		8401521913F258B400AF775F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8401521A13F258B400AF775F /* MultiDownloaderTests-Info.plist */,
+				8401521B13F258B400AF775F /* InfoPlist.strings */,
+				8401521E13F258B400AF775F /* MultiDownloaderTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8401522B13F258C000AF775F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8401523E13F2592200AF775F /* MultiTaskDownloader.h */,
+				8401523F13F2592200AF775F /* MultiTaskDownloader.m */,
+				8401524013F2592200AF775F /* MultiThreadDownloader.h */,
+				8401524113F2592200AF775F /* MultiThreadDownloader.m */,
+				8401524213F2592200AF775F /* OperationThread.h */,
+				8401524313F2592200AF775F /* OperationThread.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840151ED13F258B300AF775F /* MultiDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8401522513F258B400AF775F /* Build configuration list for PBXNativeTarget "MultiDownloader" */;
+			buildPhases = (
+				840151EA13F258B300AF775F /* Sources */,
+				840151EB13F258B300AF775F /* Frameworks */,
+				840151EC13F258B300AF775F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDownloader;
+			productName = MultiDownloader;
+			productReference = 840151EE13F258B300AF775F /* MultiDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8401521113F258B400AF775F /* MultiDownloaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8401522813F258B400AF775F /* Build configuration list for PBXNativeTarget "MultiDownloaderTests" */;
+			buildPhases = (
+				8401520D13F258B400AF775F /* Sources */,
+				8401520E13F258B400AF775F /* Frameworks */,
+				8401520F13F258B400AF775F /* Resources */,
+				8401521013F258B400AF775F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8401521713F258B400AF775F /* PBXTargetDependency */,
+			);
+			name = MultiDownloaderTests;
+			productName = MultiDownloaderTests;
+			productReference = 8401521213F258B400AF775F /* MultiDownloaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840151E513F258B300AF775F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 840151E813F258B300AF775F /* Build configuration list for PBXProject "MultiDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 840151E313F258B300AF775F;
+			productRefGroup = 840151EF13F258B300AF775F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840151ED13F258B300AF775F /* MultiDownloader */,
+				8401521113F258B400AF775F /* MultiDownloaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840151EC13F258B300AF775F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840151FD13F258B300AF775F /* InfoPlist.strings in Resources */,
+				8401520613F258B300AF775F /* MainWindow.xib in Resources */,
+				8401520C13F258B300AF775F /* MultiDownloaderViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8401520F13F258B400AF775F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8401521D13F258B400AF775F /* InfoPlist.strings in Resources */,
+				8401522013F258B400AF775F /* MultiDownloaderTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8401521013F258B400AF775F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840151EA13F258B300AF775F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8401520013F258B300AF775F /* main.m in Sources */,
+				8401520313F258B300AF775F /* MultiDownloaderAppDelegate.m in Sources */,
+				8401520913F258B300AF775F /* MultiDownloaderViewController.m in Sources */,
+				8401524413F2592200AF775F /* MultiTaskDownloader.m in Sources */,
+				8401524513F2592200AF775F /* MultiThreadDownloader.m in Sources */,
+				8401524613F2592200AF775F /* OperationThread.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8401520D13F258B400AF775F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8401522213F258B400AF775F /* MultiDownloaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8401521713F258B400AF775F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840151ED13F258B300AF775F /* MultiDownloader */;
+			targetProxy = 8401521613F258B400AF775F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840151FB13F258B300AF775F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840151FC13F258B300AF775F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8401520413F258B300AF775F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401520513F258B300AF775F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		8401520A13F258B300AF775F /* MultiDownloaderViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401520B13F258B300AF775F /* en */,
+			);
+			name = MultiDownloaderViewController.xib;
+			sourceTree = "<group>";
+		};
+		8401521B13F258B400AF775F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8401521C13F258B400AF775F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8401522313F258B400AF775F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8401522413F258B400AF775F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		8401522613F258B400AF775F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDownloader/MultiDownloader-Prefix.pch";
+				INFOPLIST_FILE = "MultiDownloader/MultiDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8401522713F258B400AF775F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDownloader/MultiDownloader-Prefix.pch";
+				INFOPLIST_FILE = "MultiDownloader/MultiDownloader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8401522913F258B400AF775F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiDownloader.app/MultiDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDownloaderTests/MultiDownloaderTests-Prefix.pch";
+				INFOPLIST_FILE = "MultiDownloaderTests/MultiDownloaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8401522A13F258B400AF775F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiDownloader.app/MultiDownloader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDownloaderTests/MultiDownloaderTests-Prefix.pch";
+				INFOPLIST_FILE = "MultiDownloaderTests/MultiDownloaderTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840151E813F258B300AF775F /* Build configuration list for PBXProject "MultiDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8401522313F258B400AF775F /* Debug */,
+				8401522413F258B400AF775F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8401522513F258B400AF775F /* Build configuration list for PBXNativeTarget "MultiDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8401522613F258B400AF775F /* Debug */,
+				8401522713F258B400AF775F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8401522813F258B400AF775F /* Build configuration list for PBXNativeTarget "MultiDownloaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8401522913F258B400AF775F /* Debug */,
+				8401522A13F258B400AF775F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840151E513F258B300AF775F /* Project object */;
+}
